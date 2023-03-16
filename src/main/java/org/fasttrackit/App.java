@@ -15,6 +15,20 @@ public class App
         carReference.doorCount = 1;
         carReference.color = "Red";
 
+        Engine engine1 = new Engine();
+        engine1.manufacturer = "Ferrari";
+        engine1.capacity = 3000;
+
+        carReference.engine = engine1;
+
+        System.out.println("Engine 1 capacity: " + engine1.capacity);
+        System.out.println("Car engine capacity: " + carReference.engine.capacity);
+
+        engine1.capacity = 4000;
+
+        System.out.println("Car engine capacity after update: " + carReference.engine.capacity);
+
+            // printing data
         System.out.println("Properties of car " + carReference.name);
         System.out.println("Max Speed: " + carReference.maxSpeed);
         System.out.println("Fuel Level: " + carReference.fuelLevel);
@@ -29,6 +43,9 @@ public class App
         car2.name = "Renault";
         car2.fuelLevel = 70;
         car2.totalTraveledDistance = 100;
+
+        car2.engine = new Engine();
+        car2.engine.capacity = 2000;
 
         System.out.println("Properties of car " + car2.name);
         System.out.println("Max Speed: " + car2.maxSpeed);

@@ -10,4 +10,7 @@ public class Car {
     double totalTraveledDistance;
     double maxSpeed;
     boolean damaged;
+
+        // has-a relationship (aggregation)
+    Engine engine;
 }
