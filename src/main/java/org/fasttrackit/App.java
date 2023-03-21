@@ -85,5 +85,13 @@ public class App
 
         // car2 = null;
         // System.out.println(carReference.name);
+
+        // System.out.println("Modulo example: ");
+        // System.out.println(4 % 2);              // should output 0 (zero)
+        // System.out.println(4 % 3); // should output 1
+        
+        // if (4 % 2 == 0){
+        //     System.out.println("4 is an even number");
+        // }
     }
 }
